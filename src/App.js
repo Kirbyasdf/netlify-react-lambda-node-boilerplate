@@ -62,7 +62,7 @@ const LambdaDemo = () => {
       <br />
       <span className="f1 grow blue">{message}</span>
       <br />
-      <span>enter a name to say hi to for the post test</span>
+      <span className="ma3">enter a name to say hi to for the post test</span>
       <br />
       <input value={input} onChange={(e) => setInput(e.target.value)} />
       <br />
