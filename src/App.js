@@ -62,9 +62,9 @@ const LambdaDemo = () => {
       <br />
       <span className="f1 grow blue">{message}</span>
       <br />
-      <span className="ma3">enter a name to say hi to for the post test</span>
+      <span>enter a name to say hi to for the post test</span>
       <br />
-      <input value={input} onChange={(e) => setInput(e.target.value)} />
+      <input  className="ma3" value={input} onChange={(e) => setInput(e.target.value)} />
       <br />
       <button onClick={(e) => handlePost(e)}>{loading ? "Loading..." : "Call Post Lambda"}</button>
 
