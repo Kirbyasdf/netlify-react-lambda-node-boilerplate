@@ -4,7 +4,7 @@ Deploy to netlify or run locally.... simply change any notice of yarn to npm dur
 
 Added POST demo
 
-Added Node boilderplate
+Added Node boiler plate
 
 ## to start
 
