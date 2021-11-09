@@ -1,8 +1,6 @@
-export async function handler(event, context) {
+export.handler = async (event)=> {
   const reqBody = JSON.parse(event.body).input;
-
   const resData = "hello " + reqBody;
-
   try {
     return {
       statusCode: 200,
