@@ -1,8 +1,9 @@
 // this uses the callback syntax, however, we encourage you to try the async/await syntax shown in async-dadjoke.js
-export function handler(event, context, callback) {
+
+exports.handler = async event => {
   console.log('queryStringParameters', event.queryStringParameters)
-  callback(null, {
+  return {
     statusCode: 200,
-    body: JSON.stringify({ msg: 'Hello, World!' }),
-  })
+    body: JSON.stringify({ msg: 'Hello, World!' })
+  }
 }
