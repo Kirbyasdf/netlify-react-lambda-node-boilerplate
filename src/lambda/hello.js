@@ -1,9 +1,18 @@
-// this uses the callback syntax, however, we encourage you to try the async/await syntax shown in async-dadjoke.js
+// Docs on event and context https://www.netlify.com/docs/functions/#the-handler-method
 
-exports.handler = async event => {
-  console.log('queryStringParameters', event.queryStringParameters)
-  return {
-    statusCode: 200,
-    body: JSON.stringify({ msg: 'Hello, World!' })
-  }
+exports.handler = async (event, context) => {
+
+	console.log("HELLO NETLIFY FUNCTION HIT")
+	try{
+
+	
+		return {
+			statusCode: 200,
+			body: JSON.stringify({ message: "Goodbye Cruel World", success: true }),	
+		} 
+	}
+		catch (err) {
+		console.log(err)
+		return { statusCode: 500, ERROR: err.toString() };
+	}
 }
