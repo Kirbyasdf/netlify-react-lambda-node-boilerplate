@@ -1,4 +1,4 @@
-export.handler = async (event)=> {
+exports.handler = async (event)=> {
   const reqBody = JSON.parse(event.body).input;
   const resData = "hello " + reqBody;
   try {
@@ -7,10 +7,10 @@ export.handler = async (event)=> {
       body: JSON.stringify({ data: resData }),
     };
   } catch (err) {
-    console.log(err); // output to netlify function log
+    console.error(err); // output to netlify function log
     return {
       statusCode: 500,
-      body: JSON.stringify({ msg: err.message }), // Could be a custom message or object i.e. JSON.stringify(err)
+      body: JSON.stringify({ ERROR: err.message }), // Could be a custom message or object i.e. JSON.stringify(err)
     };
   }
 }

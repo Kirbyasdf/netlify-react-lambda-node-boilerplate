@@ -3,12 +3,10 @@
 exports.handler = async (event, context) => {
 
 	console.log("HELLO NETLIFY FUNCTION HIT")
-	try{
-
-	
+	try{	
 		return {
 			statusCode: 200,
-			body: JSON.stringify({ message: "Goodbye Cruel World", success: true }),	
+			body: JSON.stringify({ msg: "Goodbye Cruel World", success: true }),	
 		} 
 	}
 		catch (err) {

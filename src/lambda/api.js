@@ -9,7 +9,6 @@ app.get("/.netlify/functions/api", (req, res) => {
     msg: "server is good 2 go!",
   });
 });
-
 router.get("/server-test", (req, res) => {
   res.json({
     msg: "router is good 2 go",

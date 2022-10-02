@@ -55,6 +55,7 @@ const LambdaDemo = () => {
 
   return (
     <p className="tc">
+    <h1>THIS IS WORKING LOCALLY AND ON PRODUCTION AS OF <br/> <span className="tracked dark-red"> 20221002T12:14-0600</span></h1>
       <button onClick={handleClick("hello")}>{loading ? "Loading..." : "Call Lambda"}</button>
       <button onClick={handleClick("async-dadjoke")}>{loading ? "Loading..." : "Call Async Lambda"}</button>
       <button onClick={handleClick("api/")}>{loading ? "Loading..." : "Node Server Test"}</button>
@@ -67,7 +68,6 @@ const LambdaDemo = () => {
       <input  className="ma3" value={input} onChange={(e) => setInput(e.target.value)} />
       <br />
       <button onClick={(e) => handlePost(e)}>{loading ? "Loading..." : "Call Post Lambda"}</button>
-
       <Fragment>{userCard()}</Fragment>
     </p>
   );
@@ -75,7 +75,7 @@ const LambdaDemo = () => {
 
 const App = () => {
   return (
-    <div className="bg-dark-green    vh-100 pa1">
+    <div className="bg-white    vh-100 pa1">
       <LambdaDemo />
     </div>
   );
