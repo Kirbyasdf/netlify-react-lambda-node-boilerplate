@@ -2,7 +2,7 @@
 
 exports.handler = async (event, context) => {
 
-	console.log("HELLO NETLIFY FUNCTION HIT")
+	console.log("HELLO WORLD NETLIFY FUNCTION HIT")
 	try{	
 		return {
 			statusCode: 200,
