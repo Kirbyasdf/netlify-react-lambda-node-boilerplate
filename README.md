@@ -1,4 +1,5 @@
-# - ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) This is working as of 20221003T11:48-0600 [LIVE] (https://netlfiy-node-lambda-serverless-demo.netlify.app/)
+# - ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) This is working as of 20221003T11:48-0600 
+# - ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) [LIVE](https://netlfiy-node-lambda-serverless-demo.netlify.app/)
 ## There is alot of issues with various webpacks and proxy issues in regards to react + build commands....this right now will work locally or on deployment to netlify, it also has some files already modified for you such as redirects so you can use react-router etc with ease.
 
 
