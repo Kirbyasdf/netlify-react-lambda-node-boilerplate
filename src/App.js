@@ -1,5 +1,4 @@
 import React, { useState, Fragment } from "react";
-
 import "tachyons";
 
 const LambdaDemo = () => {
@@ -55,7 +54,13 @@ const LambdaDemo = () => {
 
   return (
     <p className="tc">
-    <h1>THIS IS WORKING LOCALLY AND ON PRODUCTION AS OF <br/> <span className="tracked dark-red"> 20221002T12:14-0600</span></h1>
+    <h1>THIS IS WORKING LOCALLY AND ON PRODUCTION AS OF <br/> <span className="tracked dark-red"> 20221003T11:48-0600</span></h1>
+    <a
+					href="https://github.com/Kirbyasdf/react-boilerplate"
+					className=" link "
+					target="_blank"
+					rel="noopener noreferrer"
+				><h3 className=" i ma4 tracked gold">It is managed by <span className="dark-green ba pa3">KIRBYASDF</span> </h3></a>
       <button onClick={handleClick("hello")}>{loading ? "Loading..." : "Call Lambda"}</button>
       <button onClick={handleClick("async-dadjoke")}>{loading ? "Loading..." : "Call Async Lambda"}</button>
       <button onClick={handleClick("api/")}>{loading ? "Loading..." : "Node Server Test"}</button>

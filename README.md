@@ -1,60 +1,70 @@
-## React-Netlify-Lambda-KIRBYASDF-EDITION
+# Getting Started with Create React App
 
-Deploy to netlify or run locally.... simply change any notice of yarn to npm during netlify deployment set up. 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Added POST demo
+## Available Scripts
 
-Added Node boiler plate
+In the project directory, you can run:
 
-## to start
+### `npm start`
 
-npm i -g netlify-cli
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-clone repo
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-npm i 
+### `npm test`
 
-npm run dev
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run build`
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg?utm_source=github&utm_medium=swyx-CRAL&utm_campaign=devex)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/create-react-app-lambda&utm_source=github&utm_medium=swyx-CRAL&utm_campaign=devex)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Babel/webpack compilation
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-All functions (inside `src/lambda`) are compiled with webpack using Babel, so you can use modern JavaScript, import npm modules, etc., without any extra setup.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Local Development
+### `npm run eject`
 
-```bash
-## prep steps for first time users
-npm i -g netlify-cli # Make sure you have the [Netlify CLI](https://github.com/netlify/cli) installed
-git clone https://github.com/Kirbyasdf/netlfiy-lambda-boilerplate.git ## clone this repo
-cd create-react-app-lambda ## change into this repo
-npm i # install all dependencies
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## done every time you start up this project
-ntl dev ## nice shortcut for `netlify dev`, starts up create-react-app AND a local Node.js server for your Netlify functions
-```
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-This fires up [Netlify Dev](https://www.netlify.com/docs/cli/?utm_source=github&utm_medium=swyx-CRAL&utm_campaign=devex#netlify-dev-beta), which:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-- Detects that you are running a `create-react-app` project and runs the npm script that contains `react-scripts start`, which in this project is the `start` script
-- Detects that you use `netlify-lambda` as a [function builder](https://github.com/netlify/netlify-dev-plugin/#function-builders-function-builder-detection-and-relationship-with-netlify-lambda), and runs the npm script that contains `netlify-lambda build`, which in this project is the `build:lambda` script.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-You can view the project locally via Netlify Dev, via `localhost:8888`.
+## Learn More
 
-Each function will be available at the same port as well:
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-- `http://localhost:8888/.netlify/functions/hello` and 
-- `http://localhost:8888/.netlify/functions/async-dadjoke`
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## Deployment
+### Code Splitting
 
-During deployment, this project is configured, inside `netlify.toml` to run the build `command`: `npm build`.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-`npm build` corresponds to the npm script `build`, which uses `npm-run-all` (aka `run-p`) to concurrently run `"build:app"` (aka `react-scripts build`) and `build:lambda` (aka `netlify-lambda build src/lambda`).
+### Analyzing the Bundle Size
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-## Routing and authentication with Netlify Identity
+### Making a Progressive Web App
 
-For a full demo of routing and authentication, check this branch: https://github.com/netlify/create-react-app-lambda/pull/18 This example will not be maintained but may be helpful.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
