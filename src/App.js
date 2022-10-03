@@ -56,7 +56,7 @@ const LambdaDemo = () => {
     <p className="tc">
     <h1>THIS IS WORKING LOCALLY AND ON PRODUCTION AS OF <br/> <span className="tracked dark-red"> 20221003T11:48-0600</span></h1>
     <a
-					href="https://github.com/Kirbyasdf/react-boilerplate"
+					href="https://github.com/Kirbyasdf/netlify-react-lambda-node-boilerplate"
 					className=" link "
 					target="_blank"
 					rel="noopener noreferrer"
